@@ -77,7 +77,7 @@ const Home = () => {
           <section>
             <h2 className="text-lg font-semibold mb-2">PROFILE</h2>
             <p>
-              I'm a fullstack engineer with over 10 years of experience,
+              I‘m a fullstack engineer with over 10 years of experience,
               specializing in React.js, Next.js, Node.js, and Typescript with a
               deep expertise in frontend development.
             </p>
