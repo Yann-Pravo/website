@@ -15,7 +15,7 @@ export const JOBS = [
     type: "Freelance",
     date: "2025",
     description: MemoriselyDesc,
-    short: "Built critical features as Job Board using Next.js, TypeScript, Stripe, forms and validation.",
+    short: "Built critical features such as Job Board using Next.js, TypeScript, Stripe, forms and validation.",
     website: "https://www.memorisely.com/"
   },
   {
@@ -79,6 +79,6 @@ export const JOBS = [
 ]
 
 export const PROFILE = {
-  short: "I‘m a fullstack engineer with over 10 years of experience, specializing in React.js, Next.js, Node.js, and Typescript with a deep expertise in frontend development.",
+  short: "I'm a fullstack engineer with over 10 years of experience, specializing in React.js, Next.js, Node.js, and Typescript with a deep expertise in frontend development.",
   description: ProfileDesc
 }
