@@ -8,50 +8,64 @@ import MemoriselyDesc from './jobs/memorisely.mdx'
 
 export const JOBS = [
   {
-    role: "Freelance, Senior developer at Memorisely",
+    name: "Memorisely",
+    role: "Freelance, Senior developer at",
     location: "United-Kingdom",
     type: "Freelance",
     date: "2025",
-    description: MemoriselyDesc
+    description: MemoriselyDesc,
+    website: "https://www.memorisely.com/"
   },
   {
-    role: "Freelance, Fullstack developer at X-Studio",
+    name: "X-Studio",
+    role: "Freelance, Fullstack developer at",
     location: "France",
     type: "Freelance",
     date: "2024",
     description: XStudioDesc,
+    website: "https://www.x-studio.fr/"
   },
   {
-    role: "Freelance, Senior Frontend developer at Mass",
+    name: "Mass",
+    role: "Freelance, Senior Frontend developer at",
     location: "France",
     type: "Freelance",
     date: "2023",
     description: MassDesc,
+    website: "https://mass.money/"
   },
   {
-    role: "Senior Frontend developer at Rapsodie",
+    name: "Rapsodie",
+    role: "Senior Frontend developer at",
     location: "France",
     type: "Freelance",
     date: "2023",
     description: RapsodieDesc,
+    website: "https://rapsodie.co/"
   },
   {
-    role: "Lead Frontend Developer at Block Earner",
+    name: "Block Earner",
+    role: "Lead Frontend Developer at",
     location: "Australia",
     type: "Freelance",
     date: "2021 - 2023",
     description: BlockEarnerDesc,
+    website: "https://blockearner.com.au/"
   },
   {
-    role: "Frontend developer at Soundcharts",
+    name: "Soundcharts",
+    role: "Frontend developer at",
     location: "France",
     date: "2019 - 2021",
     description: SoundchartsDesc,
+    website: "https://soundcharts.com/"
   },
   {
-    role: "Lead frontend developer at Adomik",
+    name: "Adomik",
+    role: "Lead frontend developer at",
     location: "France",
     date: "2013 - 2018",
     description: AdomikDesc,
+    website: "https://www.adomik.com/"
   },
 ]

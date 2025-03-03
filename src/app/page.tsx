@@ -5,6 +5,7 @@ import React from "react";
 import { JOBS } from "../data/data";
 import ProfileDesc from "../data/profile.mdx"
 import { AcademicCapIcon, AtSymbolIcon, BriefcaseIcon, EnvelopeIcon, MapPinIcon, UserIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -32,22 +33,22 @@ const Home = () => {
           {/* Links */}
           <section className="flex flex-col items-center">
             <h2 className="font-semibold mb-2">◦ LINKS ◦</h2>
-            <a
+            <Link
               href="https://www.linkedin.com/in/yann-pravossoudovitch-55883881"
               className="flex items-center underline mt-1"
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Yann-Pravo"
               className="flex items-center underline mt-1"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
-            </a>
+            </Link>
           </section>
 
           {/* Skills */}
@@ -96,7 +97,7 @@ const Home = () => {
               role="list"
               className="space-y-8"
             >
-              {JOBS.map(({role, location, type, date, description: Description}, index) => (
+              {JOBS.map(({name, role, website, location, type, date, description: Description}, index) => (
                 <li key={index} className="relative flex gap-x-4">
                   <div
                     className={classNames(
@@ -111,7 +112,17 @@ const Home = () => {
                   </div>
                   <div>
                     <div className="flex items-center">
-                      <h3 className="font-semibold">{role}</h3>
+                      <div className="flex items-baseline space-x-1">
+                        <h3 className="font-semibold">{role}</h3>
+                          <Link
+                            href={website}
+                            className="underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {name}
+                          </Link>
+                      </div>
                       <div className="flex items-center ml-2 space-x-1 text-gray-600 text-sm">
                         {type && <p>{type}, </p>}
                         <p>{location}, </p>
