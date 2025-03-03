@@ -20,7 +20,7 @@ const Home = () => {
 
       <div className="mt-6 flex flex-col lg:flex-row gap-8">
         {/* Sidebar */}
-        <aside className="flex justify-center space-x-16 lg:space-x-0 lg:block lg:space-y-8 px-4">
+        <aside className="flex justify-center space-x-6 sm:space-x-12 lg:space-x-0 lg:block lg:space-y-8 px-4">
           {/* Details */}
           <section className="flex flex-col items-center">
             <h2 className="font-semibold mb-2">◦ DETAILS ◦</h2>
@@ -111,19 +111,19 @@ const Home = () => {
                     <div className="size-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300" />
                   </div>
                   <div>
-                    <div className="flex items-center">
-                      <div className="flex items-baseline space-x-1">
-                        <h3 className="font-semibold">{role}</h3>
+                    <div className="sm:flex items-center">
+                      <div className="space-x-1">
+                        <h3 className="font-semibold inline">{role}</h3>
                           <Link
                             href={website}
-                            className="underline"
+                            className="inline underline"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             {name}
                           </Link>
                       </div>
-                      <div className="flex items-center ml-2 space-x-1 text-gray-600 text-sm">
+                      <div className="flex items-center sm:ml-2 space-x-1 text-gray-600 text-sm">
                         {type && <p>{type}, </p>}
                         <p>{location}, </p>
                         <p>{date}</p>
