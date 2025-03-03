@@ -26,3 +26,20 @@ ul {
 .desc > ul {
   padding-left: 16px;
 }
+
+@media print {
+  body * {
+    visibility: hidden; /* Hide everything */
+  }
+
+  #printable-content, #printable-content * {
+    visibility: visible; /* Show only the target div */
+  }
+
+  #printable-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

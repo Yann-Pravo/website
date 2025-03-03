@@ -8,8 +8,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ['GeistVF'],
-      geistMono: ['geistMono'],
+      sans: ['Helvetica'],
     },
     extend: {
       colors: {

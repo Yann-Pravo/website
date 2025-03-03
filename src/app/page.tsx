@@ -8,10 +8,10 @@ import { AcademicCapIcon, AtSymbolIcon, BriefcaseIcon, EnvelopeIcon, MapPinIcon,
 
 const Home = () => {
   return (
-    <div className="bg-white lg:shadow-lg p-8 rounded-lg lg:max-w-5xl mx-auto text-gray-800 font-sans">
+    <div id="printable-content" className="bg-white lg:shadow-lg p-8 rounded-lg lg:max-w-5xl mx-auto text-gray-800 font-sans">
       {/* Header */}
       <header className="text-center pb-6">
-        <h1 className="font-geistMono uppercase text-2xl font-bold">Yann Pravossoudovitch</h1>
+        <h1 className="uppercase text-2xl font-bold">Yann Pravossoudovitch</h1>
         <p className="mt-2 flex items-center justify-center">
           FULL STACK WEB DEVELOPER
         </p>
@@ -22,7 +22,7 @@ const Home = () => {
         <aside className="flex justify-center space-x-16 lg:space-x-0 lg:block lg:space-y-8 px-4">
           {/* Details */}
           <section className="flex flex-col items-center">
-            <h2 className="font-geistMono font-semibold mb-2">◦ DETAILS ◦</h2>
+            <h2 className="font-semibold mb-2">◦ DETAILS ◦</h2>
             <p className="flex items-center mt-1">
             <EnvelopeIcon className="mr-2 size-4" /> yann.pravo<AtSymbolIcon className="size-4" />gmail.com
             </p>
@@ -31,7 +31,7 @@ const Home = () => {
 
           {/* Links */}
           <section className="flex flex-col items-center">
-            <h2 className="font-geistMono font-semibold mb-2">◦ LINKS ◦</h2>
+            <h2 className="font-semibold mb-2">◦ LINKS ◦</h2>
             <a
               href="https://www.linkedin.com/in/yann-pravossoudovitch-55883881"
               className="flex items-center underline mt-1"
@@ -52,7 +52,7 @@ const Home = () => {
 
           {/* Skills */}
           <section className="hidden lg:flex flex-col items-center">
-            <h2 className="font-geistMono font-semibold mb-2">◦ SKILLS ◦</h2>
+            <h2 className="font-semibold mb-2">◦ SKILLS ◦</h2>
             <ul className="space-y-1 mt-1 list-none flex flex-col items-center">
               {[
                 "Continuous deployment",
@@ -73,7 +73,7 @@ const Home = () => {
         <main className="lg:flex-grow space-y-8">
           {/* Profile */}
           <section>
-            <h2 className="font-geistMono font-semibold mb-2 flex items-center"><UserIcon className="mr-2 size-4" />PROFILE</h2>
+            <h2 className="font-semibold mb-2 flex items-center"><UserIcon className="mr-2 size-4" />PROFILE</h2>
             <div className="relative flex gap-x-4">
               <div
                 className="absolute left-0 top-0 flex w-6 bottom-1 justify-center"
@@ -91,7 +91,7 @@ const Home = () => {
 
           {/* Employment History with Vertical Timeline */}
           <section>
-            <h2 className="font-geistMono font-semibold mb-2 flex items-center"><BriefcaseIcon className="mr-2 size-4" />EMPLOYMENT HISTORY</h2>
+            <h2 className="font-semibold mb-2 flex items-center"><BriefcaseIcon className="mr-2 size-4" />EMPLOYMENT HISTORY</h2>
             <ul
               role="list"
               className="space-y-8"
@@ -127,7 +127,7 @@ const Home = () => {
 
           {/* Education */}
           <section>
-            <h2 className="font-geistMono font-semibold mb-2 flex items-center"><AcademicCapIcon className="mr-2 size-4" />EDUCATION</h2>
+            <h2 className="font-semibold mb-2 flex items-center"><AcademicCapIcon className="mr-2 size-4" />EDUCATION</h2>
             <div className="relative flex gap-x-4">
               <div
                 className="absolute left-0 top-0 flex w-6 bottom-1 justify-center"
