@@ -1,6 +1,6 @@
 "use client"
 import { Separator } from "@/components/ui/separator"
-import { Mail, MapPin, Linkedin, Calendar, Building, Github } from "lucide-react"
+import { Mail, MapPin, Linkedin, Calendar, Building, Github, School } from "lucide-react"
 
 interface CVPrintableProps {
   language: "fr" | "en"
@@ -9,16 +9,28 @@ interface CVPrintableProps {
 export default function CVPrintable({ language }: CVPrintableProps) {
   const content = {
     fr: {
-      title: "Fullstack NextJS/React/NodeJS Developer",
+      title: "Développeur Fullstack React/Typescript/Node",
       summary: "Résumé",
       summaryText:
-        "Ingénieur fullstack avec plus de 10 ans d'expérience, spécialisé en JavaScript avec une expertise approfondie en développement frontend. Expérience dans diverses entreprises et industries, avec succès dans la direction de projets technologiques et la gestion d'équipes. Expertise dans la création de fonctionnalités pour plateformes de cryptomonnaie, applications de jeux, et applications web robustes.",
-      skills: "Compétences",
+        "🖥 Développeur fullstack avec 10+ ans d'expérience, spécialisé dans l'écosystème React/Next.js et Typescript. J'ai dirigé le développement de plateformes cryptocurrency, d'applications gaming et de solutions fintech pour des startups internationales.",
+      subText: "📈 Mon approche : combiner expertise technique et vision produit pour livrer des applications robustes et scalables. Expérience prouvée dans le recrutement et management d'équipes tech multiculturelles.",
+      skills: "Stack principale",
       experience: "Expérience",
       education: "Formation",
-      notableExperience: "Expérience Notable",
-      googleSummerOfCode:
-        "Participation au programme Google Summer of Code en tant que développeur logiciel, contribuant à des projets open source.",
+      educations: [
+        {
+          title: "Ingénieur en informatique",
+          diploma: "Polytech Montpellier - École polytechnique universitaire de Montpellier",
+          location: "Montpellier, France",
+          period: "2009 - 2013"
+        },
+        {
+          title: "IUT informatique",
+          diploma: "IUT Montpellier",
+          location: "Montpellier, France",
+          period: "2007 - 2009"
+        }
+      ],
       experiences: [
         {
           title: "Lead Fullstack Developer",
@@ -26,10 +38,10 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           location: "London, United Kingdom",
           period: "2024 - Présent",
           description:
-            "Direction technique d'une équipe de développement pour construire et améliorer des fonctionnalités clés de la plateforme d'apprentissage UX/UI. Développement d'un Job Board complet avec des centaines de cas d'usage. Architecture avec TypeScript, Tailwind CSS et Next.js. Mise en place de bonnes pratiques pour la sécurité, les performances et la scalabilité.",
+            "Direction technique d'une équipe de développement pour construire et améliorer des fonctionnalités clés de la plateforme d'apprentissage UX/UI. Développement d'un job board complet avec des centaines de cas d'usage. Architecture avec TypeScript, Tailwind CSS et Next.js. Mise en place de bonnes pratiques pour la sécurité, les performances et la scalabilité.",
         },
         {
-          title: "Full Stack Engineer",
+          title: "Fullstack Engineer",
           company: "X-Studio",
           location: "Paris, France",
           period: "2024",
@@ -66,7 +78,15 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           location: "Paris, France",
           period: "2019 - 2021",
           description:
-            "Maintenance, refactorisation et ajout de nouvelles fonctionnalités à l'application web avec React.js et diverses librairies.",
+            "Maintenance, refactorisation et ajout de nouvelles fonctionnalités à l'application web avec React.js et diverses librairies de data visualisation.",
+        },
+        {
+          title: "Frontend Developer",
+          company: "Adomik",
+          location: "Paris, France",
+          period: "2013 - 2019",
+          description:
+            "J'ai commencé en tant que stagiaire et ai évolué vers un poste de lead frontend, où j'ai recruté une équipe de 4 développeurs et dirigé la refactorisation de l'application vers une stack moderne utilisant React.js, Redux et TypeScript.",
         },
       ],
     },
@@ -74,13 +94,25 @@ export default function CVPrintable({ language }: CVPrintableProps) {
       title: "Fullstack NextJS/React/NodeJS Developer",
       summary: "Summary",
       summaryText:
-        "Fullstack engineer with over 10 years of experience, specializing in JavaScript with deep expertise in frontend development. Experience across various companies and industries, with success in leading tech projects and managing teams. Expertise in creating features for cryptocurrency platforms, gaming applications, and robust web applications.",
+        "🖥 Fullstack developer with 10+ years of experience, specialized in React/Next.js ecosystem and Web3 technologies. I've led development of cryptocurrency platforms, gaming applications, and fintech solutions for international startups.",
+      subText: "📈 My approach: combining technical expertise with product vision to deliver robust and scalable applications. Proven experience in recruiting and managing multicultural tech teams.",
       skills: "Skills",
       experience: "Experience",
       education: "Education",
-      notableExperience: "Notable Experience",
-      googleSummerOfCode:
-        "Participated in Google Summer of Code program as a software developer, contributing to open source projects.",
+      educations: [
+        {
+          title: "Master of Science (MS), Computer Science",
+          diploma: "Polytech Montpellier - École polytechnique universitaire de Montpellier",
+          location: "Montpellier, France",
+          period: "2009 - 2013"
+        },
+        {
+          title: "DUT, Computer Science",
+          diploma: "IUT Montpellier",
+          location: "Montpellier, France",
+          period: "2007 - 2009"
+        }
+      ],
       experiences: [
         {
           title: "Lead Fullstack Developer",
@@ -130,6 +162,14 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           description:
             "Maintained, refactored and added new features to the web application using React.js and multiple libraries.",
         },
+        {
+          title: "Frontend Developer",
+          company: "Adomik",
+          location: "Paris, France",
+          period: "2013 - 2019",
+          description:
+            "Began as an intern and progressed to frontend lead, where I recruited a team of 4 developers and led the refactoring of the application to a modern stack using React.js, Redux, and TypeScript.",
+        },
       ],
     },
   }
@@ -142,13 +182,7 @@ export default function CVPrintable({ language }: CVPrintableProps) {
     "Node.js",
     "Vercel",
     "Prisma",
-    "Supabase",
-    "Express.js",
-    "REST APIs",
     "PostgreSQL",
-    "GraphQL",
-    "MongoDB",
-    "Web3",
   ]
 
   const t = content[language]
@@ -165,7 +199,7 @@ export default function CVPrintable({ language }: CVPrintableProps) {
 
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">YANN PRAVOSSOUDOVITCH</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2 mt-4">YANN PRAVOSSOUDOVITCH</h1>
         <h2 className="text-xl text-gray-600 mb-4">{t.title}</h2>
 
         <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
@@ -179,7 +213,7 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           </div>
           <div className="flex items-center gap-1">
             <Linkedin className="w-4 h-4" />
-            linkedin.com/in/yann-pravossoudovitch-55883881
+            https://lked.in/yannp
           </div>
           <div className="flex items-center gap-1">
             <Github className="w-4 h-4" />
@@ -193,7 +227,10 @@ export default function CVPrintable({ language }: CVPrintableProps) {
       {/* Summary */}
       <section className="mb-8">
         <h3 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wide">{t.summary}</h3>
+        <div className="space-y-2">
         <p className="text-gray-700 leading-relaxed">{t.summaryText}</p>
+        <p className="text-gray-700 leading-relaxed">{t.subText}</p>
+        </div>
       </section>
 
       {/* Skills */}
@@ -201,7 +238,13 @@ export default function CVPrintable({ language }: CVPrintableProps) {
         <h3 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wide">{t.skills}</h3>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
-            <span key={index} className="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">
+            <span
+              key={index}
+              className="px-2 py-1 bg-gray-100 print:bg-gray-100 text-gray-700 text-sm rounded"
+              style={{
+                printColorAdjust: 'exact',
+                WebkitPrintColorAdjust: 'exact'
+              }}>
               {skill}
             </span>
           ))}
@@ -214,15 +257,15 @@ export default function CVPrintable({ language }: CVPrintableProps) {
         <div className="space-y-6">
           {t.experiences.map((exp, index) => (
             <div key={index} className="border-l-2 border-gray-200 pl-4">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-                <div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                <div className="flex space-x-4">
                   <h4 className="font-bold text-gray-900">{exp.title}</h4>
                   <p className="text-gray-600 flex items-center gap-1">
                     <Building className="w-3 h-3" />
                     {exp.company} • {exp.location}
                   </p>
                 </div>
-                <span className="text-sm text-gray-500 flex items-center gap-1 mt-1 md:mt-0">
+                <span className="text-sm text-gray-500 flex items-center gap-1 mt-1 sm:mt-0">
                   <Calendar className="w-3 h-3" />
                   {exp.period}
                 </span>
@@ -235,27 +278,26 @@ export default function CVPrintable({ language }: CVPrintableProps) {
 
       {/* Education */}
       <section className="mb-8">
-        <h3 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wide">{t.education}</h3>
-        <div className="space-y-3">
-          <div>
-            <h4 className="font-semibold text-gray-900">Master of Science (MS), Computer Science</h4>
-            <p className="text-gray-600 text-sm">École polytechnique universitaire de Montpellier • 2009 - 2013</p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-900">DUT, Computer Science</h4>
-            <p className="text-gray-600 text-sm">IUT Montpellier • 2007 - 2009</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Notable Experience */}
-      <section>
-        <h3 className="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wide">{t.notableExperience}</h3>
-        <div className="text-sm text-gray-700">
-          <p className="mb-2">
-            <strong>Google Summer of Code</strong> - Software Developer (2012) - Montpellier, France
-          </p>
-          <p>{t.googleSummerOfCode}</p>
+        <h3 className="text-lg font-bold text-gray-900 mb-4 uppercase tracking-wide">{t.education}</h3>
+        <div className="space-y-6">
+          {t.educations.map((exp, index) => (
+            <div key={index} className="border-l-2 border-gray-200 pl-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                <div className="flex space-x-4">
+                  <h4 className="font-bold text-gray-900">{exp.title}</h4>
+                  <p className="text-gray-600 flex items-center gap-1">
+                    <School className="w-3 h-3" />
+                    {exp.location}
+                  </p>
+                </div>
+                <span className="text-sm text-gray-500 flex items-center gap-1 mt-1 sm:mt-0">
+                  <Calendar className="w-3 h-3" />
+                  {exp.period}
+                </span>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">{exp.diploma}</p>
+            </div>
+          ))}
         </div>
       </section>
     </div>

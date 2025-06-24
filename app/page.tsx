@@ -1,13 +1,12 @@
 "use client"
 
-import { useState, createContext, useContext } from "react"
+import { useState, createContext } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import {
   Mail,
-  MapPin,
   Linkedin,
   Download,
   ExternalLink,
@@ -47,9 +46,9 @@ const translations = {
     // About
     aboutTitle: "À propos",
     aboutText1:
-      "Je suis un ingénieur fullstack avec plus de 10 ans d'expérience, spécialisé en JavaScript avec une expertise approfondie en développement frontend. Tout au long de ma carrière, j'ai eu l'opportunité de travailler dans diverses entreprises et industries, me permettant de m'adapter facilement à tout projet.",
+      "🏗️ Je transforme des idées en applications web performantes. De la startup crypto australienne Block Earner où j'ai bâti une plateforme from scratch, aux plateformes gaming et fintech, j'aime créer des produits qui comptent.",
     aboutText2:
-      "J'ai dirigé avec succès des projets technologiques et géré de petites équipes pour développer des applications exceptionnelles. Mon expérience inclut la création de fonctionnalités essentielles pour des plateformes de cryptomonnaie, la refactorisation et l'amélioration d'applications de jeux, et la construction d'applications web robustes à partir de zéro.",
+      "📈 Ce que je fais bien : développement frontend/backend, leadership d'équipe, architecture scalable. Ce qui m'anime : résoudre des problèmes complexes avec du code propre et des équipes motivées.",
 
     // Experience
     experienceTitle: "Expérience",
@@ -65,8 +64,8 @@ const translations = {
 
     // Contact
     contactTitle: "Contact",
-    linkedinProfile: "Profil LinkedIn",
-    githubProfile: "Profil GitHub",
+    linkedinProfile: "LinkedIn",
+    githubProfile: "GitHub",
     printMyCV: "Imprimer mon CV",
 
     // Footer
@@ -88,9 +87,9 @@ const translations = {
     // About
     aboutTitle: "About",
     aboutText1:
-      "I'm a fullstack engineer with over 10 years of experience, specializing in JavaScript with deep expertise in frontend development. Throughout my career, I've had the opportunity to work in various companies and industries, allowing me to adapt to any project with ease.",
+      "💡 I turn ideas into high-performing web applications. From building a crypto platform from scratch at Australian startup Block Earner to gaming and fintech platforms, I love creating products that matter.",
     aboutText2:
-      "I've successfully led tech projects and managed small teams to develop outstanding applications. My experience includes creating essential features for cryptocurrency platforms, refactoring and enhancing gaming applications, and building robust web applications from scratch.",
+      "📈 What I do well: frontend/backend development, team leadership, scalable architecture. What drives me: solving complex problems with clean code and motivated teams.",
 
     // Experience
     experienceTitle: "Experience",
@@ -116,14 +115,6 @@ const translations = {
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
-
-function useLanguage() {
-  const context = useContext(LanguageContext)
-  if (!context) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
-  }
-  return context
-}
 
 export default function Portfolio() {
   const [language, setLanguage] = useState<Language>("fr")
@@ -550,7 +541,7 @@ export default function Portfolio() {
                     <div className="flex items-center gap-4">
                       <Linkedin className="w-5 h-5 text-slate-400" />
                       <Link
-                        href="https://www.linkedin.com/in/yann-pravossoudovitch-55883881/"
+                        href="https://lked.in/yannp"
                         target="_blank"
                         className="text-slate-200 hover:text-white transition-colors flex items-center gap-1"
                       >
