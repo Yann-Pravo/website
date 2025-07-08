@@ -94,8 +94,8 @@ export default function CVPrintable({ language }: CVPrintableProps) {
       title: "Fullstack NextJS/React/NodeJS Developer",
       summary: "Summary",
       summaryText:
-        "🖥 Fullstack developer with 10+ years of experience, specialized in React/Next.js ecosystem and Web3 technologies. I've led development of cryptocurrency platforms, gaming applications, and fintech solutions for international startups.",
-      subText: "📈 My approach: combining technical expertise with product vision to deliver robust and scalable applications. Proven experience in recruiting and managing multicultural tech teams.",
+        "🖥 Fullstack developer with 10+ years of experience, specialized in React/Next.js and Node.js ecosystem. I've led development of cryptocurrency platforms, big data visualization platforms, and fintech solutions for international startups.",
+      subText: "📈 My approach: combining technical expertise with product vision to deliver robust and scalable applications. Proven experience in recruiting and mentoring multicultural tech teams.",
       skills: "Skills",
       experience: "Experience",
       education: "Education",
@@ -128,7 +128,7 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           location: "Paris, France",
           period: "2024",
           description:
-            "Fullstack developer within a collective of freelance experts. Built scalable web applications using Next.js, TypeScript, Tailwind, Prisma, and Supabase deployed on Vercel. Focused on creating sustainable and collaborative freelancing environment.",
+            "Fullstack developer within a collective of freelance experts. Built scalable web applications using Next.js, TypeScript, Tailwind, Prisma, and Supabase, deployed on Vercel. Focused on creating sustainable and collaborative freelancing environment.",
         },
         {
           title: "Senior Frontend Developer",
@@ -152,7 +152,7 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           location: "Sydney, Australia",
           period: "2021 - 2023",
           description:
-            "Built cryptocurrency web application from scratch. Recruited and managed frontend team. Developed critical DeFi functionalities. Coordinated between frontend and backend teams.",
+            "Built cryptocurrency web application from scratch using React.js, Next.js, Typescript, REST API and web sockets. Recruited and managed frontend team. Developed critical DeFi functionalities. Coordination between frontend, design and backend teams.",
         },
         {
           title: "Frontend Developer",
@@ -160,7 +160,7 @@ export default function CVPrintable({ language }: CVPrintableProps) {
           location: "Paris, France",
           period: "2019 - 2021",
           description:
-            "Maintained, refactored and added new features to the web application using React.js and multiple libraries.",
+            "Developed music data visualization web platform using React.js, Typescript and GraphQL. Improved performance to show large amount of data thanks to frontend best practices.",
         },
         {
           title: "Frontend Developer",
@@ -180,8 +180,8 @@ export default function CVPrintable({ language }: CVPrintableProps) {
     "TypeScript",
     "Tailwind CSS",
     "Node.js",
-    "Vercel",
     "Prisma",
+    "GraphQL",
     "PostgreSQL",
   ]
 
